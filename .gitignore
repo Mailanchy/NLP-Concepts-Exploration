@@ -7,3 +7,6 @@ __pycache__/
 
 # Secret files (Standard file for API keys, etc.)
 .env
+
+# Custom Temporary or Test Files
+test.py 
