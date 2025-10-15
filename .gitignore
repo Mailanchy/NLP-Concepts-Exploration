@@ -1,0 +1,9 @@
+# Python environment files
+.venv/
+__pycache__/
+
+# Specific Operating System files (Mac)
+.DS_Store
+
+# Secret files (Standard file for API keys, etc.)
+.env
