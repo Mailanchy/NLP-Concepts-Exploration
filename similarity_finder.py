@@ -4,7 +4,7 @@ import numpy as np
 # 1. Vectorization
 documents = [
     "I love coding in Python.",
-    "Python is a great tool for Data Science.",
+    "Python is a great tool for Data Science",
     "I love Data Science.",
     "The sun is shining today.", 
     "The cat sat on the mat."
@@ -20,6 +20,7 @@ query_vector = tfidf_matrix[query_index]
 
 # 3. Similarity check
 similarity_score = cosine_similarity(query_vector, tfidf_matrix).flatten() # cosine_similarity() returns a 2D array
+print(similarity_score)
 sorted_indices = similarity_score.argsort()
 result_index = sorted_indices[-2]
 result_score = similarity_score[result_index]
@@ -36,5 +37,5 @@ print(f"Sentence: {result_doc}")
 print(f"Score: {result_score:.3f}")
 print("---\n")
 
-print("Analysis: \nThe higher the score (closer to 1.0), the more similar the TF-IDF vectors are.\nHighly depend on the given corpus")
+
 
