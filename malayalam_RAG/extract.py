@@ -3,7 +3,7 @@ import fitz
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 from dotenv import load_dotenv
 from langchain_openai import OpenAIEmbeddings
-from langchain_community.vectorstores import Chroma
+from langchain_chroma import Chroma
 
 load_dotenv()
 
@@ -58,6 +58,6 @@ if __name__ == '__main__':
         vector_database = vector_db(chunks)
         total_vectors = vector_database._collection.count()
         print(f'Total vectors in the database: {total_vectors}')
-        
+
     except Exception as e:
         print(e)
