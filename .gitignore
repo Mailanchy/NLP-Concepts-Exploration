@@ -11,3 +11,6 @@ __pycache__/
 # Custom Temporary or Test Files
 test.py 
 notes.txt
+
+# Ignore the vector database file if it exists
+kerala_db
